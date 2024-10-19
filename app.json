@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/schedule/schedule",
+    "pages/schedule/report",
+    "pages/schedule/all-reports",
+    "pages/employee/employee",
+    "pages/customer/customer",
+    "pages/report/report",
+    "pages/contract/contract",
+    "pages/contract/detail",
+    "pages/contract/add",
+    "pages/survey/survey",
+    "pages/notification/notification",
+    "pages/management/management"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Garden Care App",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/schedule/schedule",
+        "text": "Schedule"
+      },
+      {
+        "pagePath": "pages/employee/employee",
+        "text": "Employees"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "text": "Customers"
+      },
+      {
+        "pagePath": "pages/contract/contract",
+        "text": "Contracts"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "text": "Reports"
+      }
+    ]
+  }
+}

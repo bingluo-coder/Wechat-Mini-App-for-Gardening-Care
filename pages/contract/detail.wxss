@@ -1,0 +1,35 @@
+.container {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.contract-details {
+  background-color: #f0f0f0;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+
+.contract-details text {
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  width: 45%;
+}
+
+.terminate-button {
+  background-color: #f44336;
+  color: white;
+}

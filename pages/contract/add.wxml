@@ -1,0 +1,12 @@
+<view class="container">
+  <text class="title">Add New Contract</text>
+  <form bindsubmit="submitContract">
+    <input placeholder="Customer Name" bindinput="inputCustomerName" />
+    <input placeholder="Service Type" bindinput="inputServiceType" />
+    <input placeholder="Start Date (YYYY-MM-DD)" bindinput="inputStartDate" />
+    <input placeholder="End Date (YYYY-MM-DD)" bindinput="inputEndDate" />
+    <textarea placeholder="Contract Terms" bindinput="inputTerms"></textarea>
+    <input placeholder="Price" bindinput="inputPrice" />
+    <button form-type="submit">Add Contract</button>
+  </form>
+</view>

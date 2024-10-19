@@ -1,0 +1,7 @@
+<view class="container">
+  <text>Employee Performance</text>
+  <view wx:for="{{employees}}" wx:key="index">
+    <text>Name: {{item.name}}</text>
+    <text>Total Services: {{item.totalServices}}</text>
+  </view>
+</view>

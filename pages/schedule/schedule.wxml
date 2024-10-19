@@ -1,0 +1,20 @@
+<view class="container">
+  <text class="title">Task Schedules</text>
+  <view wx:for="{{schedules}}" wx:key="id" class="schedule-item">
+    <text>Date: {{item.date}}</text>
+    <text>Task: {{item.task}}</text>
+    <text>Overall Status: {{item.status}}</text>
+    <view wx:for="{{item.employees}}" wx:for-item="employee" wx:key="id" class="employee-item">
+      <text>Employee: {{employee.name}}</text>
+      <text>Status: {{employee.status}}</text>
+      <view class="photo-preview">
+        <image wx:for="{{employee.photos}}" wx:for-item="photo" wx:key="*this" src="{{photo}}" mode="aspectFill" />
+      </view>
+      <view class="button-group">
+        <button bindtap="uploadPhotos" data-schedule-id="{{item.id}}" data-employee-id="{{employee.id}}">Upload Photos</button>
+        <button bindtap="generateReport" data-schedule-id="{{item.id}}" data-employee-id="{{employee.id}}">Generate Report</button>
+      </view>
+    </view>
+    <button bindtap="viewAllReports" data-id="{{item.id}}" class="view-all-button">View All Reports</button>
+  </view>
+</view>

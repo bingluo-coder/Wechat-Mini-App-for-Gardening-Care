@@ -1,0 +1,16 @@
+<view class="container">
+  <text class="title">Schedule Report</text>
+  <view class="report-details">
+    <text>Date: {{schedule.date}}</text>
+    <text>Employee: {{schedule.employee}}</text>
+    <text>Task: {{schedule.task}}</text>
+    <text>Status: {{schedule.status}}</text>
+  </view>
+  <view class="photo-evidence">
+    <text class="subtitle">Photo Evidence:</text>
+    <view class="photo-grid">
+      <image wx:for="{{schedule.photos}}" wx:key="*this" src="{{item}}" mode="aspectFill" />
+    </view>
+  </view>
+  <button bindtap="saveReport" class="save-button">Save Report</button>
+</view>

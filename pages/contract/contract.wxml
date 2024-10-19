@@ -1,0 +1,13 @@
+<view class="container">
+  <text class="title">Contract Management</text>
+  <view class="contract-list">
+    <view wx:for="{{contracts}}" wx:key="id" class="contract-item">
+      <text>Customer: {{item.customerName}}</text>
+      <text>Service: {{item.serviceType}}</text>
+      <text>Status: {{item.status}}</text>
+      <text>Period: {{item.startDate}} - {{item.endDate}}</text>
+      <button bindtap="viewContract" data-id="{{item.id}}">View Details</button>
+    </view>
+  </view>
+  <button bindtap="addContract" class="add-button">Add New Contract</button>
+</view>

@@ -1,0 +1,35 @@
+.container {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.schedule-info {
+  background-color: #f0f0f0;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+
+.employee-item {
+  background-color: #ffffff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0,0,0,0.1);
+}
+
+.schedule-info text, .employee-item text {
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10rpx;
+}

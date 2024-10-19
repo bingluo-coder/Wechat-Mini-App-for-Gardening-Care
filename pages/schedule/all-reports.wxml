@@ -1,0 +1,13 @@
+<view class="container">
+  <text class="title">All Reports for Task</text>
+  <view class="schedule-info">
+    <text>Date: {{schedule.date}}</text>
+    <text>Task: {{schedule.task}}</text>
+  </view>
+  <view wx:for="{{employees}}" wx:key="id" class="employee-item">
+    <text>Employee: {{item.name}}</text>
+    <text>Status: {{item.status}}</text>
+    <text>Photos: {{item.photos.length}}</text>
+    <button bindtap="viewEmployeeReport" data-id="{{item.id}}">View Report</button>
+  </view>
+</view>

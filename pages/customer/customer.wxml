@@ -1,0 +1,8 @@
+<view class="container">
+  <text>Customer Services</text>
+  <view wx:for="{{customers}}" wx:key="index">
+    <text>Name: {{item.name}}</text>
+    <text>Service Date: {{item.serviceDate}}</text>
+    <text>Service Type: {{item.serviceType}}</text>
+  </view>
+</view>

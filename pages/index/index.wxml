@@ -1,0 +1,11 @@
+<view class="container">
+  <text>Welcome to {{companyInfo.name}}</text>
+  <text>Employees: {{companyInfo.employees}}</text>
+  <text>Customers: {{companyInfo.customers}}</text>
+  <navigator url="/pages/schedule/schedule">View Schedule</navigator>
+  <navigator url="/pages/report/report">Generate Report</navigator>
+  <navigator url="/pages/contract/contract">Manage Contracts</navigator>
+  <navigator url="/pages/survey/survey">Customer Survey</navigator>
+  <navigator url="/pages/notification/notification">Notifications</navigator>
+  <navigator url="/pages/management/management">Management</navigator>
+</view>

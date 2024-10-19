@@ -1,0 +1,57 @@
+.container {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.schedule-item {
+  background-color: #f0f0f0;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+
+.employee-item {
+  background-color: #ffffff;
+  padding: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 5rpx;
+}
+
+.schedule-item text, .employee-item text {
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.photo-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10rpx;
+}
+
+.photo-preview image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.button-group button {
+  width: 45%;
+}
+
+.view-all-button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10rpx;
+}

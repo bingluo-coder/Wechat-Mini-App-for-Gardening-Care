@@ -1,0 +1,46 @@
+<view class="container">
+  <text class="title">Generate Monthly Report</text>
+  
+  <radio-group class="radio-group" bindchange="switchReportType">
+    <radio value="customer" checked="{{reportType === 'customer'}}">Customer Report</radio>
+    <radio value="employee" checked="{{reportType === 'employee'}}">Employee Report</radio>
+  </radio-group>
+
+  <picker mode="date" fields="month" value="{{month}}" bindchange="selectMonth">
+    <view class="picker">
+      Select Month: {{month}}
+    </view>
+  </picker>
+
+  <picker wx:if="{{reportType === 'employee'}}" bindchange="selectEmployee" value="{{employee}}" range="{{employees}}">
+    <view class="picker">
+      Select Employee: {{employee || 'Please select'}}
+    </view>
+  </picker>
+
+  <button bindtap="generateReport">Generate Report</button>
+
+  <view wx:if="{{reportData}}" class="report-data">
+    <text class="subtitle">Report for {{month}}</text>
+    
+    <view wx:if="{{reportType === 'customer'}}">
+      <text>Total Customers: {{reportData.totalCustomers}}</text>
+      <text>Total Services: {{reportData.totalServices}}</text>
+      <text>Total Revenue: ¥{{reportData.revenue}}</text>
+      <text class="subtitle">Top Services:</text>
+      <view wx:for="{{reportData.topServices}}" wx:key="name">
+        <text>{{item.name}}: {{item.count}} times</text>
+      </view>
+    </view>
+
+    <view wx:else>
+      <text>Employee: {{reportData.employeeName}}</text>
+      <text>Total Services: {{reportData.totalServices}}</text>
+      <text>Average Rating: {{reportData.averageRating}}</text>
+      <text class="subtitle">Top Customers:</text>
+      <view wx:for="{{reportData.topCustomers}}" wx:key="name">
+        <text>{{item.name}}: {{item.services}} services</text>
+      </view>
+    </view>
+  </view>
+</view>

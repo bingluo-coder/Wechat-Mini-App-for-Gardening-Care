@@ -1,0 +1,15 @@
+<view class="container">
+  <text class="title">Contract Details</text>
+  <view class="contract-details">
+    <text>Customer: {{contract.customerName}}</text>
+    <text>Service: {{contract.serviceType}}</text>
+    <text>Status: {{contract.status}}</text>
+    <text>Period: {{contract.startDate}} - {{contract.endDate}}</text>
+    <text>Terms: {{contract.terms}}</text>
+    <text>Price: {{contract.price}}</text>
+  </view>
+  <view class="button-group">
+    <button bindtap="editContract">Edit Contract</button>
+    <button bindtap="terminateContract" class="terminate-button">Terminate Contract</button>
+  </view>
+</view>
